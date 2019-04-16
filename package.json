@@ -1,0 +1,23 @@
+{
+  "name": "file_uploader",
+  "version": "1.0.0",
+  "description": "file_uploader",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "server": "nodemon --exec babel-node -- ./server.js",
+    "client": "cd ./client && npm run start",
+    "dev": "npm run server & npm run client"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-eslint": "^10.0.1",
+    "babel-preset-env": "^1.7.0",
+    "concurrently": "^4.1.0",
+    "nodemon": "^1.18.11"
+  },
+  "dependencies": {
+    "express": "^4.16.4",
+    "express-fileupload": "^1.1.4"
+  }
+}
