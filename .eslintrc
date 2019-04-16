@@ -17,5 +17,7 @@
     "browser": true,
     "node": true
   },
-  "rules": {}
+  "rules": {
+    "no-console": "off"
+  }
 }
