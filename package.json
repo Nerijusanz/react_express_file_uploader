@@ -5,7 +5,7 @@
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
-    "server": "nodemon server.js",
+    "server": "nodemon --exec babel-node -- ./server.js",
     "client": "cd ./client && npm run start",
     "dev": "npm run server & npm run client"
   },
