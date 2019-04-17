@@ -1,12 +1,14 @@
 import React from "react";
 import "./App.css";
+import FileUpload from "./components/FileUpload";
 
 const App = () => (
-  <div className="conatiner mt-4">
+  <div className="container mt-4">
     <h4 className="display-4 text-center mb-4">
-      <i className="fab fa-react"></i>
+      <i className="fab fa-react" />
       <span>React File Upload</span>
     </h4>
+    <FileUpload />
   </div>
 );
 
