@@ -1,14 +1,10 @@
-import React, { Component } from "react";
+import React from "react";
 import "./App.css";
 
-class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <h1>REACT File Uploader</h1>
-      </div>
-    );
-  }
-}
+const App = () => (
+  <div className="conatiner mt-4">
+    <h2>File uploader</h2>
+  </div>
+);
 
 export default App;
