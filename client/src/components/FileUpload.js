@@ -1,5 +1,7 @@
 import React, { Fragment, useState } from "react";
 import axios from "axios";
+import Message from "./Message";
+import Progress from "./Progress";
 
 const FileUpload = () => {
   const [file, setFile] = useState("");
@@ -55,6 +57,7 @@ const FileUpload = () => {
 
   return (
     <Fragment>
+      {message && <Message msg={message} />}
       <form onSubmit={onSubmitHandler}>
         <div className="custom-file mb-4">
           <input
@@ -67,6 +70,8 @@ const FileUpload = () => {
             {filename}
           </label>
         </div>
+
+        <Progress percentage={uploadPercentage} />
 
         <input
           type="submit"
